@@ -36,4 +36,11 @@
         android:layout_gravity="center"
         android:text="@string/jump_plugin_fragment" />
 
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/jump_plugin_appcompat" />
+
 </LinearLayout>

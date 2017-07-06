@@ -45,5 +45,20 @@ public class MainActivity extends FragmentActivity {
                 startActivity(new Intent(MainActivity.this, PluginFragmentActivity.class));
             }
         });
+
+        findViewById(R.id.btn2).setOnClickListener(new View.OnClickListener(){
+            /**
+             * Called when a view has been clicked.
+             *
+             * @param v The view that was clicked.
+             */
+            @Override
+            public void onClick(View v) {
+                RePlugin.startActivity(MainActivity.this, RePlugin.createIntent("demo1", "com.qihoo360.replugin.sample.demo1.activity.appcompat.AppCompatActivityDemo"));
+
+            }
+        });
+
+
     }
 }

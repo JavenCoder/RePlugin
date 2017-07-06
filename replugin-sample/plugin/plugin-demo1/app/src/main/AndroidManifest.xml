@@ -1,4 +1,4 @@
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2005-2017 Qihoo 360 Inc.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -12,8 +12,7 @@
   ~ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
   ~ License for the specific language governing permissions and limitations under
   ~ the License.
-  -->
-
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.qihoo360.replugin.sample.demo1">
 
@@ -21,8 +20,8 @@
         android:name=".MainApp"
         android:allowBackup="false"
         android:icon="@mipmap/app_icon"
-        android:label="@string/app_name">
-
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat">
         <meta-data
             android:name="com.qihoo360.plugin.name"
             android:value="demo1" />
@@ -37,6 +36,7 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -63,11 +63,11 @@
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="com.qihoo360.replugin.sample.demo1.action.theme_fullscreen" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.qihoo360.repluginapp.replugin.demo1.CATEGORY1" />
             </intent-filter>
         </activity>
-
 
         <!-- receivers -->
         <receiver android:name=".receivers.PluginDemo1Receiver">
@@ -121,6 +121,7 @@
             android:theme="@android:style/Theme.Black.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.demo1" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="category_demo" />
             </intent-filter>
@@ -129,5 +130,8 @@
         <provider
             android:name=".provider.Provider2"
             android:authorities="com.qihoo360.replugin.sample.demo1.provider2" />
+
+        <activity android:name=".activity.appcompat.AppCompatActivityDemo"></activity>
     </application>
+
 </manifest>
