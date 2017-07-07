@@ -56,3 +56,4 @@ dependencies {
 }
 
 apply from: 'bintray.gradle'
+apply plugin: 'maven-publish'
