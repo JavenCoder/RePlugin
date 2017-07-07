@@ -44,4 +44,3 @@ dependencies {
     provided 'com.android.support:appcompat-v7:23.4.0'
 }
 apply from: 'bintray.gradle'
-apply plugin: 'maven-publish'
